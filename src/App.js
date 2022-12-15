@@ -10,7 +10,10 @@ import Properties from "./components/Properties/Properties";
 import Cookies from "../src/components/Cookies";
 import Footer from "./components/Footer";
 import FullDetailOnFirstLisbonPropertyForSale from "./components/Properties/sales/sales in details/FullDetailOnFirstLisbonPropertyForSale";
-import Lisbon from "./components/Properties/sales/Locations/Lisbon";
+import LisbonSell from "./components/Properties/sales/Locations/LisbonSell";
+import AlgarveSell from "./components/Properties/sales/Locations/AlgarveSell";
+import LisbonRent from "./components/Properties/rent/Rent location/LisbonRent";
+import AlgarveRent from "./components/Properties/rent/Rent location/AlgarveRent";
 
 function App() {
   return (
@@ -29,7 +32,10 @@ function App() {
             path="/FullDetailOnFirstLisbonPropertyForSale"
             element={<FullDetailOnFirstLisbonPropertyForSale />}
           />
-          <Route path="/lisbon" element={<Lisbon />} />
+          <Route path="/lisbon" element={<LisbonSell />} />
+          <Route path="/algarve" element={<AlgarveSell />} />
+          <Route path="/lisbonrent" element={<LisbonRent />} />
+          <Route path="/algarverent" element={<AlgarveRent />} />
         </Routes>
       </div>
       <Cookies />
