@@ -15,17 +15,23 @@ import { BsBookmarkPlus } from "react-icons/bs";
 import { IoMdShareAlt } from "react-icons/io";
 import { Link } from "react-router-dom";
 import RentLocation from "../RentLocation";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const LisbonRent = () => {
   return (
-    <div className="h-[3000px]">
+    <div>
       <Properties />
-      <div className="md:h-[750px] h-[1300px]">
+      <div>
         {/*grid container*/}
         <div className="h-full w-[360px] md:w-[1000px] mx-auto md:grid grid-cols-2 gap-[10px]">
           {/*carousel & grid child-1*/}
-          <div>
-            <div className="mt-[100px]">
+          <div className="mt-[50px]">
+            <article className="w-[180px] flex items-center justify-between mb-[30px]">
+              <p className="text-[18px] font-bold text-black">Portugal</p>
+              <AiOutlineArrowRight size={25} className="text-orange-600" />
+              <p className="text-[18px] font-bold text-orange-600">Lisbon</p>
+            </article>
+            <div className="mb-[30px]">
               <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

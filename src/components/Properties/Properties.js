@@ -23,7 +23,7 @@ const Properties = () => {
   return (
     <div>
       <div
-        className="h-[500px] w-full bg-no-repeat bg-center bg-cover"
+        className="w-full h-[350px] bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${property})` }}
       >
         {/*container */}

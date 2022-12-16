@@ -18,7 +18,7 @@ import RentLocation from "../rent/RentLocation";
 
 const Rentlist = () => {
   return (
-    <div className="md:h-[750px] h-[1300px]">
+    <div>
       {/* <div className="h-full w-[360px] md:w-[1000px] mx-auto md:grid grid-cols-2 gap-[10px]"> */}
       <div className="h-full w-[360px] md:w-[1000px] mx-auto md:grid grid-cols-2 gap-[10px]">
         {/*carousel & grid child1*/}

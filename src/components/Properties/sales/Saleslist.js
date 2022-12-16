@@ -10,7 +10,7 @@ const Saleslist = () => {
   return (
     <div>
       {/*container */}
-      <section className="h-[1200px] mt-[20px]">
+      <section className="mt-[20px]">
         <main>
           <article className="w-[180px] flex items-center justify-between mt-[50px]">
             <p className="text-[18px] font-bold text-black">Portugal</p>

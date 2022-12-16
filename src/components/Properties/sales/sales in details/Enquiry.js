@@ -2,9 +2,15 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const Enquiry = () => {
-  const { register, handleSubmit, watch, formState: {errors}  } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    reset();
   };
 
   return (
@@ -50,7 +56,8 @@ const Enquiry = () => {
               name="comment"
               id=""
               cols="30"
-              className="border-2 text-black"></textarea>
+              className="border-2 text-black"
+            ></textarea>
           </article>
           {/* <button className="w-[300px] ml-[20px] text-white hover:bg-pink-400 mt-[15px] rounded-full bg-pink-600 text-center text-[14px] font-bold py-[5px]">
             send inquiry

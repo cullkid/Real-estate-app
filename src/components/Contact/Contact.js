@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import contact from "../../images/contact-img.svg";
+import ContactDetail from "../ContactDetail";
 
 const Contact = () => {
   const {
@@ -14,11 +15,11 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="md:h-[1700px] h-[2800px]">
       {/*container */}
       <div className="h-full w-[360px] md:w-[1000px] mx-auto">
         {/*grid container */}
-        <section className="grid grid-cols-2 gap-x-10px">
+        <section className="md:grid grid-cols-2 gap-x-10px">
           {/*grid child-1 */}
           <article>
             <h1 className="text-black text-font-bold mt-[50px]">CONTACT US</h1>
@@ -54,7 +55,7 @@ const Contact = () => {
             <p className="mt-[30px]">We look forward to meeting you soon!</p>
           </article>
           {/*grid child-2 */}
-          <article className="mt-[0px] border-4 w-[300px] rounded-t-[10px] place-self-end">
+          <article className="my-auto md:mt-[0px] mt-[25px] border-4 w-[300px] rounded-t-[10px] place-self-end">
             <h1 className="bg-[#1E0909] px-[15px] rounded-t-[10px] text-white text-[14px] font-bold py-[5px]">
               Contact Us
             </h1>
@@ -124,6 +125,7 @@ const Contact = () => {
             </p>
           </article>
         </section>
+        <ContactDetail />
       </div>
     </div>
   );
